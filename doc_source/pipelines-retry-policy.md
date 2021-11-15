@@ -7,7 +7,7 @@ The retry policy only supports the following pipeline steps:
 + [Training Step](build-and-manage-steps.md#step-type-training) 
 + [Tuning Step](build-and-manage-steps.md#step-type-tuning) 
 **Note**  
-The SageMaker hyperparameter tuning job already conducts retries internally so the `SageMaker.JOB_INTERNAL_ERROR` exception type iis not retried, even if a retry policy is configured\. If you really want to retry, you can program your own [ Retry Strategy](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RetryStrategy.html) using the SageMaker API\.
+The SageMaker hyperparameter tuning job already conducts retries internally so the `SageMaker.JOB_INTERNAL_ERROR` exception type is not retried, even if a retry policy is configured\. If you really want to retry, you can program your own [ Retry Strategy](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RetryStrategy.html) using the SageMaker API\.
 + [CreateModel Step](build-and-manage-steps.md#step-type-create-model) 
 + [RegisterModel Step](build-and-manage-steps.md#step-type-register-model) 
 + [Transform Step](build-and-manage-steps.md#step-type-transform) 
